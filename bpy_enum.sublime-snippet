@@ -1,0 +1,20 @@
+<snippet>
+    <description>bpy.props.EnumProperty</description>
+    <content>
+<![CDATA[mode_options = [
+    # having element 0 and 1 helps reduce code.
+    ("option1", "option1", "", 0),
+    ("option2", "option2", "", 1),
+    ("option3", "option3", "", 2)
+]
+
+selected_mode = bpy.props.EnumProperty(
+    items=mode_options,
+    description="offers....",
+    default="option1"
+    #, update=updateNode
+)
+]]></content>
+    <tabTrigger>enum</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
