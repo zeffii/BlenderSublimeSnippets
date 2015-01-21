@@ -1,0 +1,29 @@
+<snippet>
+    <description>bpy.props.EnumProperty</description>
+    <content>
+<![CDATA[class ${1:ClassName}(bpy.types.Operator):
+
+    bl_idname = "node.${2:some_callback_identifier}"
+    bl_label = "${3:Short Name}"
+    # bl_options = {'REGISTER', 'UNDO'}
+
+    fn_name = bpy.props.StringProperty(default='')
+    # obj_type = bpy.props.StringProperty(default='MESH')
+
+    def dispatch(self, context, type_op):
+        n = context.node
+
+        if type_op == 'some_named_function':
+            pass
+
+        elif type_op == 'some_named_other_function':
+            pass
+
+    def execute(self, context):
+        self.dispatch(context, self.fn_name)
+        return {'FINISHED'}
+
+]]></content>
+    <tabTrigger>node callback</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
