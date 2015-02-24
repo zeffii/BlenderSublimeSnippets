@@ -1,0 +1,15 @@
+<snippet>
+    <description>class utils (un)register</description>
+    <content>
+<![CDATA[
+def register():
+    bpy.utils.register_class(${1:ClassName})
+
+
+def unregister():
+    bpy.utils.unregister_class(${1:ClassName})
+]]></content>
+    <tabTrigger>register</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
+

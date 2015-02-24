@@ -1,0 +1,17 @@
+<snippet>
+    <description>snippet:from_pydata</description>
+    <content>
+<![CDATA[
+mesh = bpy.data.meshes.new("mesh_name")
+mesh.from_pydata(verts=[], edges=[], faces=[])
+mesh.update()
+
+obj = bpy.data.objects.new("obj_name", mesh)
+
+scene = bpy.context.scene
+scene.objects.link(obj)
+
+]]></content>
+    <tabTrigger>from_pydata</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
