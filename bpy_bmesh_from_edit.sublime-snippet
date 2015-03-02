@@ -1,0 +1,18 @@
+<snippet>
+    <description>snippet: bmesh_from_edit</description>
+    <content>
+<![CDATA[
+# Get the active mesh
+obj = bpy.context.edit_object
+me = obj.data
+
+bm = bmesh.from_edit_mesh(me)
+
+# bm.verts.active = None
+# bm.edges.active = None
+# bm.faces.active = None
+
+# bmesh.update_edit_mesh(me, True)]]></content>
+    <tabTrigger>bmesh from editmode</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

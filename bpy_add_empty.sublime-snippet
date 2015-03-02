@@ -1,0 +1,11 @@
+<snippet>
+    <description>snippet: add empty</description>
+    <content>
+<![CDATA[
+empty = bpy.data.objects.new(mtname, None)
+scene.objects.link(empty)
+scene.update()
+]]></content>
+    <tabTrigger>add empty</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
