@@ -1,0 +1,17 @@
+<snippet>
+    <description>snippet:try_except</description>
+    <content>
+<![CDATA[
+import sys
+
+try:
+    ...
+except Exception as err:
+    sys.stderr.write('ERROR: %s\n' % str(err))
+    print(sys.exc_info()[-1].tb_frame.f_code)
+    print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno))
+
+]]></content>
+    <tabTrigger>_try</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
