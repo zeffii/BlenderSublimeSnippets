@@ -1,0 +1,26 @@
+<snippet>
+    <description>snippet:bl_info = {</description>
+    <content>
+<![CDATA[
+bl_info = {
+    "name": "FILL ME IN",
+    "author": "Dealga McArdle",
+    "version": (0, 1),
+    "blender": (2, 7, 6),
+    "location": "",
+    "description": "",
+    "warning": "",
+    "wiki_url": "",
+    "tracker_url": "",
+    "category": ""
+}
+
+:: common categories ::
+3D View, Console, Import-Export, Material, Mesh,
+Node, Object, Render, Scene, Sequencer, System, 
+Text Editor, User Interface
+
+]]></content>
+    <tabTrigger>bl_info{</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
