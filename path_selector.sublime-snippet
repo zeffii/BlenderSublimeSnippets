@@ -1,0 +1,36 @@
+<snippet>
+    <description>snippet:path selector bpy</description>
+    <content>
+<![CDATA[
+import os
+from bpy_extras.io_utils import ExportHelper
+
+class IdentifierDirectorySelector(bpy.types.Operator, ExportHelper):
+    bl_idname = "something.identifier_folder_selector"
+    bl_label = "some folder"
+
+    filename_ext = "."
+    use_filter_folder = True
+
+    def execute(self, context):
+        # even if you pick a file i'll strip it and get the dirname
+        fdir = self.properties.filepath
+        dp = os.path.dirname(fdir)
+        context.scene.some_identifier_directory = dp
+        return{'FINISHED'}
+
+# register
+bpy.types.Scene.some_identifier_directory = bpy.props.StringProperty()
+
+# unregster
+del bpy.types.Scene.some_identifier_directory
+
+# ui
+row = col.row(align=True)
+row.prop(scn, 'some_identifier_directory', text='directory:')
+row.operator("something.identifier_folder_selector", icon="FILE_FOLDER", text="")
+
+]]></content>
+    <tabTrigger>path selector bpy</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
