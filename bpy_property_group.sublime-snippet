@@ -19,7 +19,7 @@ bpy.types.Scene.${2:collection_name} = bpy.props.PointerProperty(
     name="${2:collection_name}", type=${1:ClassName})
 
 # unregister
-del bpy.types.Scene.tinycad_props
+del bpy.types.Scene.${2:collection_name}
 
 ]]></content>
 	<tabTrigger>prop group b3d</tabTrigger>
