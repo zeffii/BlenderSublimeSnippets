@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+class ${1:ClassName}(bpy.types.PropertyGroup):
+
+    somefloatvector = bpy.props.FloatVectorProperty(
+        default=(0.2, 0.90, .2), subtype='COLOR', min=0.0, max=1.0
+    )
+
+    someint = bpy.props.IntProperty(
+        min=3, max=60, default=12
+    )
+
+    somefloat = bpy.props.FloatProperty(
+        default=1.0, precision=4, min=0.0001
+    )
+
+# register
+bpy.types.Scene.${2:collection_name} = bpy.props.PointerProperty(
+    name="${2:collection_name}", type=${1:ClassName})
+
+# unregister
+del bpy.types.Scene.tinycad_props
+
+]]></content>
+	<tabTrigger>prop group b3d</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
