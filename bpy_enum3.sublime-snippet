@@ -1,0 +1,15 @@
+<snippet>
+    <description>bpy.props.EnumProperty</description>
+    <content>
+<![CDATA[mode_options = [(k, k, '', i) for i, k in enumerate(["${1:option1}", ""])]
+
+selected_mode = bpy.props.EnumProperty(
+    items=mode_options,
+    description="offers....",
+    default="${1:option1}"
+    #, update=updateNode
+)
+]]></content>
+    <tabTrigger>enum3</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
