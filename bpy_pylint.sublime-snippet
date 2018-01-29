@@ -1,0 +1,8 @@
+<snippet>
+    <description>pylint quickly</description>
+    <content>
+<![CDATA[# pylint: disable=${1:option1}]]>
+    </content>
+    <tabTrigger>pylint</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
