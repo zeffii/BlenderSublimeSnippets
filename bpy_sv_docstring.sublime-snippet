@@ -1,0 +1,15 @@
+<snippet>
+    <description>docstring sv</description>
+    <content>
+<![CDATA[    """
+    Triggers: 
+    Tooltip: 
+    
+    A short description for reader of node code
+    """
+
+]]>
+    </content>
+    <tabTrigger>docstring</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
