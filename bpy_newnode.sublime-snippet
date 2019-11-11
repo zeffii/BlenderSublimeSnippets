@@ -1,5 +1,5 @@
 <snippet>
-    <description>node template</description>
+    <description>node.template</description>
     <content>
 <![CDATA[# This file is part of project Sverchok. It's copyrighted by the contributors
 # recorded in the version control history of the file, available from
@@ -16,7 +16,14 @@ from sverchok.node_tree import SverchCustomTreeNode
 from sverchok.data_structure import updateNode
 
 class ${1:option1}(bpy.types.Node, SverchCustomTreeNode):
-    ''' a ${1:option1} f '''
+    
+    """
+    Triggers: ${1:option1}
+    Tooltip: 
+    
+    A short description for reader of node code
+    """
+
     bl_idname = '${1:option1}'
     bl_label = '${1:option1}'
     bl_icon = 'GREASEPENCIL'
@@ -31,11 +38,10 @@ class ${1:option1}(bpy.types.Node, SverchCustomTreeNode):
         ...
 
 
-classes = [${1:option1]
+classes = [${1:option1}]
 register, unregister = bpy.utils.register_classes_factory(classes)
-]]>
 
-</content>
+]]></content>
     <tabTrigger>new node</tabTrigger>
     <scope>source.python</scope>
 </snippet>
