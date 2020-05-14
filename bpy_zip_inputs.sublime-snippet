@@ -1,0 +1,13 @@
+<snippet>
+    <description>zip repeats input</description>
+    <content>
+<![CDATA[
+        # from sverchok.data_structure import match_long_repeat #, fullList  
+        meshes = match_long_repeat([vertices_s, edges_s, faces_s, masks_s, thresholds])
+        for vertices, edges, faces, masks, threshold in zip(*meshes):
+            # fullList(masks,  len(vertices))
+]]>
+    </content>
+    <tabTrigger>zip repeats input</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

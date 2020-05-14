@@ -1,0 +1,7 @@
+<snippet>
+    <description>bpy.props.PointerProperty</description>
+    <content>
+<![CDATA[pointer: bpy.props.PointerProperty(type=bpy.types.${1:option1}, poll=lambda s, o: True, update=pointer_update)]]></content>
+    <tabTrigger>pointer</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

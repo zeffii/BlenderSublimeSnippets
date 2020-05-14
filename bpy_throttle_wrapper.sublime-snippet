@@ -1,0 +1,9 @@
+<snippet>
+    <description>@throttled</description>
+    <content>
+<![CDATA[@throttled  # from sverchok.node_tree import SverchCustomTreeNode, throttled
+]]>
+    </content>
+    <tabTrigger>throttled</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

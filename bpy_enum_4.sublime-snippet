@@ -1,0 +1,13 @@
+<snippet>
+    <description>shorthand EnumProperty 4 items</description>
+    <content>
+<![CDATA[# from sverchok.data_structure import enum_item_4
+selected_mode = bpy.props.EnumProperty(
+    items=enum_item_4(["${1:option1}", ""])
+    description="...",
+    default="${1:option1}", update=updateNode)
+
+]]></content>
+    <tabTrigger>enum4 and imports</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

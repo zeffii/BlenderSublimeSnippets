@@ -1,0 +1,20 @@
+<snippet>
+    <description>iojson storage</description>
+    <content>
+<![CDATA[
+    import json
+
+    def storage_set_data(self, node_ref):
+        '''function to get data when importing from json'''
+        data_list = node_ref.get('${1:option1}_data')
+        data_dict = json.loads(data_list)
+
+    def storage_get_data(self, node_ref):
+        '''function to set data for exporting json'''
+        data_json_str = json.dumps(data)
+        node_ref['${1:option1}_data'] = data_json_str]]>
+
+    </content>
+    <tabTrigger>storage</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

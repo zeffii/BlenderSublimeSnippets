@@ -1,0 +1,10 @@
+<snippet>
+    <description>register classes</description>
+    <content>
+<![CDATA[classes = []
+register, unregister = bpy.utils.register_classes_factory(classes)
+]]>
+    </content>
+    <tabTrigger>register classes</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <description>sv_throttle_tree_update()</description>
+    <content>
+<![CDATA[with self.sv_throttle_tree_update():
+
+]]>
+    </content>
+    <tabTrigger>throttle</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
